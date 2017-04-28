@@ -1,4 +1,8 @@
-package jakubchmielowiec.pointofsale;
+package jakubchmielowiec.pointofsale.infrastructure;
+
+import jakubchmielowiec.pointofsale.Barcode;
+import jakubchmielowiec.pointofsale.Product;
+import jakubchmielowiec.pointofsale.ProductRepository;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

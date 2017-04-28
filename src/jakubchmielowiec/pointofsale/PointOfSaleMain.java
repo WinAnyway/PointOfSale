@@ -1,17 +1,18 @@
 package jakubchmielowiec.pointofsale;
 
+import jakubchmielowiec.pointofsale.infrastructure.InMemoryProductRepository;
+
 public class PointOfSaleMain {
 
     private SellingProcess sellingProcess;
 
     private PointOfSaleMain() {
         BarcodeScanner barcodeScanner = new ConsoleBarcodeScanner();
-        ValidationProcess validationProcess = new ConsoleInputValidationProcess();
         Display display = new LCDDisplay();
         ReceiptPrinter receiptPrinter = new ConsoleReceiptPrinter();
         ProductRepository productRepository = new InMemoryProductRepository();
 
-        sellingProcess = new StandardSellingProcess(barcodeScanner, validationProcess, display, receiptPrinter, productRepository);
+        sellingProcess = new StandardSellingProcess(barcodeScanner, display, receiptPrinter, productRepository);
     }
 
     private void start() {

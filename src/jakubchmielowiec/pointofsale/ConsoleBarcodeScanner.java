@@ -12,8 +12,14 @@ public class ConsoleBarcodeScanner implements BarcodeScanner {
 
     @Override
     public Barcode scan() {
-        String input = scanner.next();
+        String input = scanner.nextLine();
+        ensureNotEmpty(input);
         return new Barcode(input);
+    }
+
+    private void ensureNotEmpty(String input) {
+        if(input == null || input.trim().isEmpty())
+            throw new IllegalArgumentException();
     }
 
 }
