@@ -1,4 +1,9 @@
-package jakubchmielowiec.pointofsale;
+package jakubchmielowiec.pointofsale.application;
+
+import jakubchmielowiec.pointofsale.model.*;
+import jakubchmielowiec.pointofsale.ui.BarcodeScanner;
+import jakubchmielowiec.pointofsale.ui.Display;
+import jakubchmielowiec.pointofsale.ui.ReceiptPrinter;
 
 public class StandardSellingProcess implements SellingProcess {
 

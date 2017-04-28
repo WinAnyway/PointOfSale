@@ -1,4 +1,4 @@
-package jakubchmielowiec.pointofsale;
+package jakubchmielowiec.pointofsale.model;
 
 import java.math.BigDecimal;
 

@@ -1,4 +1,7 @@
-package jakubchmielowiec.pointofsale;
+package jakubchmielowiec.pointofsale.ui.impl;
+
+import jakubchmielowiec.pointofsale.model.Barcode;
+import jakubchmielowiec.pointofsale.ui.BarcodeScanner;
 
 import java.util.Scanner;
 
