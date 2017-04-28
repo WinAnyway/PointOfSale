@@ -4,12 +4,13 @@ public class ConsoleInputValidationProcess implements ValidationProcess {
 
     @Override
     public boolean isValid(Barcode barcode) {
-        return false;
+        String code = barcode.getCode();
+        return code == null || code.trim().isEmpty();
     }
 
     @Override
     public boolean isExitCommand(Barcode barcode) {
-        return false;
+        return barcode.getCode().equals("exit");
     }
 
 }
