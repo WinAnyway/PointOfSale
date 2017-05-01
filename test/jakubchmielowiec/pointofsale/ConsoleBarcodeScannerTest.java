@@ -1,8 +1,8 @@
 package jakubchmielowiec.pointofsale;
 
 import jakubchmielowiec.pointofsale.model.Barcode;
-import jakubchmielowiec.pointofsale.ui.BarcodeScanner;
-import jakubchmielowiec.pointofsale.ui.impl.ConsoleBarcodeScanner;
+import jakubchmielowiec.pointofsale.application.BarcodeScanner;
+import jakubchmielowiec.pointofsale.ui.ConsoleBarcodeScanner;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;

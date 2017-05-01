@@ -1,19 +1,16 @@
 package jakubchmielowiec.pointofsale.application;
 
 import jakubchmielowiec.pointofsale.model.*;
-import jakubchmielowiec.pointofsale.ui.BarcodeScanner;
-import jakubchmielowiec.pointofsale.ui.Display;
-import jakubchmielowiec.pointofsale.ui.ReceiptPrinter;
 
-public class StandardSellingProcess implements SellingProcess {
+public class StandardPointOfSale implements PointOfSale {
 
     private BarcodeScanner barcodeScanner;
     private Display display;
     private ReceiptPrinter receiptPrinter;
     private ProductRepository productRepository;
 
-    public StandardSellingProcess(BarcodeScanner barcodeScanner, Display display,
-                                  ReceiptPrinter receiptPrinter, ProductRepository productRepository) {
+    public StandardPointOfSale(BarcodeScanner barcodeScanner, Display display,
+                               ReceiptPrinter receiptPrinter, ProductRepository productRepository) {
         this.barcodeScanner = barcodeScanner;
         this.display = display;
         this.receiptPrinter = receiptPrinter;

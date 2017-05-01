@@ -1,4 +1,4 @@
-package jakubchmielowiec.pointofsale.ui;
+package jakubchmielowiec.pointofsale.application;
 
 import jakubchmielowiec.pointofsale.model.Barcode;
 import jakubchmielowiec.pointofsale.model.Product;

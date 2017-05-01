@@ -1,8 +1,8 @@
-package jakubchmielowiec.pointofsale.ui.impl;
+package jakubchmielowiec.pointofsale.ui;
 
 import jakubchmielowiec.pointofsale.model.Product;
 import jakubchmielowiec.pointofsale.model.Receipt;
-import jakubchmielowiec.pointofsale.ui.ReceiptPrinter;
+import jakubchmielowiec.pointofsale.application.ReceiptPrinter;
 
 import java.text.NumberFormat;
 

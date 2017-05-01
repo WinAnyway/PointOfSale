@@ -1,6 +1,6 @@
 package jakubchmielowiec.pointofsale.application;
 
-public interface SellingProcess {
+public interface PointOfSale {
 
     void sell();
 

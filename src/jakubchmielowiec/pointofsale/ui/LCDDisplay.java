@@ -1,8 +1,8 @@
-package jakubchmielowiec.pointofsale.ui.impl;
+package jakubchmielowiec.pointofsale.ui;
 
 import jakubchmielowiec.pointofsale.model.Barcode;
 import jakubchmielowiec.pointofsale.model.Product;
-import jakubchmielowiec.pointofsale.ui.Display;
+import jakubchmielowiec.pointofsale.application.Display;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;

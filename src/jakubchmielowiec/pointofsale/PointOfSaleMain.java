@@ -1,17 +1,15 @@
 package jakubchmielowiec.pointofsale;
 
-import jakubchmielowiec.pointofsale.application.SellingProcess;
-import jakubchmielowiec.pointofsale.application.StandardSellingProcess;
+import jakubchmielowiec.pointofsale.application.*;
 import jakubchmielowiec.pointofsale.infrastructure.InMemoryProductRepository;
 import jakubchmielowiec.pointofsale.model.*;
-import jakubchmielowiec.pointofsale.ui.*;
-import jakubchmielowiec.pointofsale.ui.impl.ConsoleBarcodeScanner;
-import jakubchmielowiec.pointofsale.ui.impl.ConsoleReceiptPrinter;
-import jakubchmielowiec.pointofsale.ui.impl.LCDDisplay;
+import jakubchmielowiec.pointofsale.ui.ConsoleBarcodeScanner;
+import jakubchmielowiec.pointofsale.ui.ConsoleReceiptPrinter;
+import jakubchmielowiec.pointofsale.ui.LCDDisplay;
 
 public class PointOfSaleMain {
 
-    private SellingProcess sellingProcess;
+    private PointOfSale pointOfSale;
 
     private PointOfSaleMain() {
         BarcodeScanner barcodeScanner = new ConsoleBarcodeScanner();
@@ -19,11 +17,11 @@ public class PointOfSaleMain {
         ReceiptPrinter receiptPrinter = new ConsoleReceiptPrinter();
         ProductRepository productRepository = new InMemoryProductRepository();
 
-        sellingProcess = new StandardSellingProcess(barcodeScanner, display, receiptPrinter, productRepository);
+        pointOfSale = new StandardPointOfSale(barcodeScanner, display, receiptPrinter, productRepository);
     }
 
     private void start() {
-        sellingProcess.sell();
+        pointOfSale.sell();
     }
 
     public static void main(String[] args) {
